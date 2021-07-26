@@ -1,4 +1,4 @@
-import styled from "styled-components";
+
 import {Script} from '../components/Script'
 
 const Script4 = () => {
