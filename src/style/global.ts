@@ -14,5 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     background-repeat: repeat-y;
     background-size: contain;
     font-family: var(--font-main);
+    margin: 0;
   }
 `
