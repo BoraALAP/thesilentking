@@ -11,7 +11,7 @@ import slide3 from "./assets/images/slide3.jpeg"
 import slide4 from "./assets/images/slide4.jpeg"
 import slide5 from "./assets/images/slide5.jpeg"
 
-import bag from "./assets/images/bag.png"
+// import bag from "./assets/images/bag.png"
 import book from "./assets/images/book.png"
 import chips from "./assets/images/chips.png"
 // import compass from "./assets/images/compass.png"
