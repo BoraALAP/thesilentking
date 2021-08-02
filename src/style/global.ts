@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
   :root{
-    --font-main: 'Carter One', cursive;
+    --font-main: 'Roboto', sans-serif;
     --font-script: 'Courier New', monospace;
   }
 

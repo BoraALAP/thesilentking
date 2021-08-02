@@ -18,9 +18,10 @@ const Container = styled.div<any>`
   justify-content: ${props => props.start ? "start" : props.end ? "end": "center"};
   align-content: ${props => props.up ? "start" : props.down ? "end": "center"};
   width: 100vw;
+  height: 150px;
   @media screen and (min-width: 768px) {
     
-    height: 150px;
+    height: 75px;
     
   }
   `;

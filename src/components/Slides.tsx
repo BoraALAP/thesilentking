@@ -9,10 +9,10 @@ interface Props {
 
 const Slides = ({alt, src, children, rev}:Props) => {
   return <Container rev={rev}>
-    <Image src={src} alt={alt} rev={rev}/>
     <P>
       {children}
     </P>
+    <Image src={src} alt={alt} rev={rev}/>
   </Container>;
 };
 
@@ -39,7 +39,7 @@ const Image = styled.img<any>`
   min-height: 300px;
   height: 100%;
   object-fit: contain;
-  transform: ${props => `rotate(${props.rev ? "-2" : "2"}deg)`};
+  transform: ${props => `rotate(${props.rev ? "2" : "-2"}deg)`};
   
   @media screen and (min-width: 768px) {
     order: ${props => props.rev ? "2" : "-1"};
@@ -50,7 +50,13 @@ const Image = styled.img<any>`
 const P = styled.div`
   display: grid;
   color: white;
-  max-width: 500px
+  max-width: 500px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.8;
+  text-shadow: 0px 0px 3px #000;
+
+
 `;
 
 

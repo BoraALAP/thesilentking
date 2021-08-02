@@ -23,6 +23,7 @@ const Container = styled.div<any>`
       text-transform: uppercase;
       text-align: center;
       font-weight: 400;
+      margin-bottom: 8px;
     }
   }
 `;

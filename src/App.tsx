@@ -29,14 +29,14 @@ function App() {
   return (
     <Container>
       <GlobalStyle />
-      <Objects src={bag} start size={250}/>
-      <Slides src={slide1} alt="slide 1">
+      {/* <Objects src={bag} start size={250}/> */}
+      <Slides src={slide1} alt="slide 1" rev>
       <p>
         The Silent King is a feature script with only 4 characters, in one room, around one table. It's a simple night of Dungeons & Dragons between 4 friends. But the Dungeon Master Morgan has a sinister plan for tonight's game.
         </p>
         </Slides> 
-        <Objects src={book} size={500} end/>
-        <Slides src={slide2} alt="slide 2" rev>
+        <Objects src={book} size={300} end/>
+        <Slides src={slide2} alt="slide 2" >
         <p>
           As the group of old friends play the game, their collective imagination seeps into the reality. We never leave the table - the fantasy comes to us. 
           </p>
@@ -45,7 +45,7 @@ function App() {
       <Script2 />
       <Objects src={chips} size={300} start/>
       <Objects src={dice4} size={300} end/>
-      <Slides src={slide3} alt="slide 3">
+      <Slides src={slide3} alt="slide 3" rev>
       <p>
         This is the first time they meet for a d&d session in over a year. We learn that Wren; the fifth member of the party and Morgan's brother, passed away a year ago; which stopped the game until tonight.
         </p>
@@ -55,12 +55,12 @@ function App() {
   </p>
         </Slides> 
         <Objects src={map} start size={400}/>
-        <Slides src={slide4} alt="slide 4" rev>
+        <Slides src={slide4} alt="slide 4" >
         Morgan's game is a direct representation of his feelings, and as the night goes, the imagination becomes more and more real. Tonight's session is born out of his fears, frustration, and pain, and it soon becomes clear to everyone.
         </Slides> 
       <Script4 />
       <Objects src={dice2} end size={250}/>
-      <Slides src={slide5} alt="slide 5">
+      <Slides src={slide5} alt="slide 5" rev>
       The story captures what it means to find home and heart within a roleplaying game, and meditates over how we can lose our ways as we grow up, having forced to learn that nothing in life is promised.
         </Slides> 
         <Objects src={map2} size={450}/>
