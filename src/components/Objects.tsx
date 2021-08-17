@@ -7,10 +7,11 @@ interface Props {
   down?:Boolean,
   src?:string
   size?:Number
+  height?:Number
 }
 
-const Objects = ({src, start,end, up, down, size = 200 }: Props) => {
-  return <Container start={start} end={end} up={up} down={down}><ImageS size={size} src={src}/></Container>;
+const Objects = ({src, start,end, up, down, size = 200, height = 150 }: Props) => {
+  return <Container start={start} end={end} up={up} down={down} height={height}><ImageS size={size} src={src}/></Container>;
 };
 
 const Container = styled.div<any>`
@@ -18,10 +19,10 @@ const Container = styled.div<any>`
   justify-content: ${props => props.start ? "start" : props.end ? "end": "center"};
   align-content: ${props => props.up ? "start" : props.down ? "end": "center"};
   width: 100vw;
-  height: 150px;
+  height: ${props => `${props.height}px`};
   @media screen and (min-width: 768px) {
     
-    height: 75px;
+    height: ${props => `calc(${props.height}px / 2)`};
     
   }
   `;
